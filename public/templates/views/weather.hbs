@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{>links}}
+</head>
+<body>
+  {{>navbar}}
+                        <!-- body code -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-10 col-12 mx-auto">
+                <div class="main_content">
+                    <form class="temp_form">
+                        <input type="text" id="city_name" placeholder="Enter City Name" autocomplete="off">
+                        <input type="submit" value="Search" id="submit_btn">
+                    </form>
+                </div>
+
+                <div class="temp_info">
+                    <div class="top_layer">
+                        <p class="day">Monday</p>
+                        <p class="date">13 Oct</p>
+                    </div>
+                    <div class="main_layer">
+                        <p class="city_name">Get Output Here</p>
+                        <div class="middle_layer data_hide">
+                            <p id="temp">0 C</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+ {{>footer}}
+</body>
+</html>
